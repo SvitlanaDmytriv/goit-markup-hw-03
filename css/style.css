@@ -98,7 +98,7 @@ address {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	border: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 .border {
 	border-color: #ececec;
@@ -154,10 +154,10 @@ address {
 }
 /* hero*/
 .hero {
-	height: 600px;
+	padding-top: 200px;
+	padding-bottom: 200px;
 	text-align: center;
 	background-color: var(--dark-bg-color);
-	margin-bottom: 94px;
 }
 
 .hero-title {
@@ -191,8 +191,13 @@ address {
 .features-item {
 	width: 270px;
 }
+.features-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .features {
-	margin-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .features .title {
 	font-weight: 700;
@@ -208,7 +213,7 @@ address {
 	margin-right: 30px;
 }
 .work {
-	margin-bottom: 94px;
+	padding-bottom: 94px;
 }
 .section.title {
 	margin-bottom: 50px;
@@ -240,7 +245,7 @@ address {
 	text-align: center;
 }
 .team-item {
-	width: max-content;
+	width: 270px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
@@ -289,8 +294,8 @@ address {
 
 /*page-portfolio*/
 .examples {
-	margin-top: 94px;
-	margin-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 /*filter*/
 .filter-list {
@@ -316,12 +321,13 @@ address {
 	background-color: var(--accent-color);
 }
 /*examples*/
+
 .examples-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 .examples-item {
-	width: 370;
+	width: 370px;
 }
 .examples-item:not(:nth-child(3n)) {
 	margin-right: 30px;
